@@ -6,9 +6,10 @@ public class MyMain {
     // If the char is not an uppercase letter, 
     // it is returned unchanged. 
     public static char toLower(char ch) {
+        if((int)ch>=65&&(int)ch<=90){
         int c = ch;
         c+= 32;
-        ch = (char) c;
+        ch = (char) c;}
         return ch;
     }
 
@@ -30,9 +31,12 @@ public class MyMain {
     // If the char is not an lowercase letter, 
     // it is returned unchanged. 
     public static char toUpper(char ch) {
+        if((int)ch>=97&&(int)ch<=122){
         int c = ch;
         c-= 32;
         ch = (char) c;
+        }
+        
         return ch;
     }
 
